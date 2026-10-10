@@ -1,0 +1,40 @@
+/* White surfaces support the transparent professor-provided card images. */
+.game-root {
+    -fx-background-color: #eef3f4;
+    -fx-font-family: "System";
+    -fx-font-size: 14px;
+}
+.title { -fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #183c3b; }
+.subtitle, .instructions { -fx-text-fill: #4c6264; }
+.playing-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: #becaca;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+    -fx-padding: 0;
+    -fx-min-width: 145;
+    -fx-pref-width: 145;
+    -fx-max-width: 145;
+    -fx-min-height: 205;
+    -fx-pref-height: 205;
+    -fx-max-height: 205;
+    -fx-effect: dropshadow(gaussian, rgba(22, 52, 51, 0.12), 8, 0.1, 0, 3);
+}
+.input-label { -fx-text-fill: #263e40; -fx-font-weight: bold; }
+.text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 7;
+    -fx-border-color: #b9c8cb;
+    -fx-border-radius: 7;
+    -fx-padding: 11 13;
+    -fx-font-size: 16px;
+}
+.text-field:focused { -fx-border-color: #237b70; }
+.button { -fx-padding: 12 22; -fx-background-radius: 7; -fx-cursor: hand; -fx-font-weight: bold; }
+.verify-button { -fx-background-color: #226c62; -fx-text-fill: white; }
+.verify-button:hover { -fx-background-color: #18574f; }
+.refresh-button { -fx-background-color: #dce8e7; -fx-text-fill: #235950; }
+.refresh-button:hover { -fx-background-color: #cbdedb; }
+.button:focused { -fx-border-color: #153f39; -fx-border-radius: 7; }
+.value-key { -fx-text-fill: #53666a; -fx-font-size: 12px; }
