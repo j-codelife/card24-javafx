@@ -2,3 +2,8 @@ target/
 .idea/
 *.iml
 .DS_Store
+src/test/
+README.md
+SOURCE-CODE.md
+TEST-RESULTS.txt
+VIDEO-SCRIPT.md
