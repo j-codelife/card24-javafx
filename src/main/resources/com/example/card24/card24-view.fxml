@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.card24.Card24Controller"
+      spacing="18" alignment="TOP_CENTER" styleClass="game-root">
+    <padding><Insets top="28" right="32" bottom="28" left="32"/></padding>
+    <HBox alignment="CENTER_LEFT" spacing="20">
+        <VBox spacing="4" HBox.hgrow="ALWAYS">
+            <Label text="Card 24" styleClass="title"/>
+            <Label text="Four cards. One target." styleClass="subtitle"/>
+        </VBox>
+        <Button text="Refresh" onAction="#handleRefresh" styleClass="refresh-button"/>
+    </HBox>
+    <HBox fx:id="cardsBox" spacing="16" alignment="CENTER"/>
+    <Label text="Use every card once to make 24. Use +, −, *, / and parentheses."
+           wrapText="true" styleClass="instructions"/>
+    <VBox spacing="8" maxWidth="Infinity">
+        <Label text="Enter an expression" styleClass="input-label"/>
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <TextField fx:id="expressionField" promptText="Use the numeric values of your cards"
+                       accessibleText="Enter an expression"
+                       onAction="#handleVerify" HBox.hgrow="ALWAYS"/>
+            <Button text="Verify" onAction="#handleVerify" defaultButton="true" styleClass="verify-button"/>
+        </HBox>
+    </VBox>
+    <Label text="A = 1   ·   J = 11   ·   Q = 12   ·   K = 13" styleClass="value-key"/>
+</VBox>
